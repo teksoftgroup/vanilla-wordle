@@ -21,7 +21,6 @@ document.addEventListener('DOMContentLoaded', () => {
         .then(response => response.json())
         .then(result => {
             word = result[Math.floor(Math.random() * result.length)];
-            console.log('Solution: ', word);
         })
         .catch(err => console.log('error', err));
     }
@@ -144,7 +143,6 @@ document.addEventListener('DOMContentLoaded', () => {
             }
 
             if(letter === 'del'){
-                console.log('delete key pressed');
                 deleteLetter();
                 return;
             }
